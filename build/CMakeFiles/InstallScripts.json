@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/emmy/worldHello/build/cmake_install.cmake",
+		"/home/emmy/worldHello/build/vendored/SDL/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

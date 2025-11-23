@@ -1,0 +1,19 @@
+vendored/SDL/CMakeFiles/SDL3-shared.dir/src/render/software/SDL_render_sw.c.o: \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_render_sw.c \
+ /usr/include/stdc-predef.h \
+ /home/emmy/worldHello/vendored/SDL/src/SDL_internal.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../SDL_sysrender.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../../video/SDL_surface_c.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../../video/SDL_blit.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../SDL_yuv_sw_c.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_render_sw_c.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_draw.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../../video/SDL_surface_c.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_blendfillrect.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_blendline.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_blendpoint.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_drawline.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_drawpoint.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/SDL_triangle.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../../video/SDL_pixels_c.h \
+ /home/emmy/worldHello/vendored/SDL/src/render/software/../../video/SDL_rotate.h
