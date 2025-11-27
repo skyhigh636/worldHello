@@ -40,13 +40,14 @@ bool update() {
   SDL_Delay(1);
   return true;
 }
-
+/* 16x16 sprite data (1 = pixel on, 0 = pixel off) */
+/*
 const unsigned char sprite[] = {
 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-};
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+};*/
 
 void drawsprite(int x, int y, unsigned int color) {
   int i, j, c, yofs;
@@ -71,7 +72,7 @@ void render(Uint64 aTicks) {
   i = amount of sprites, gets multiplied by drawsprite(),
   at least 5 will appear as a result
    */
-  for (int i = 0; i < 221; i++) {
+  for (int i = 0; i < 2; i++) {
     /* calculation for positioning and movement of sprites*/
     drawsprite(
         (int)((WINDOW_WIDTH / 2) +
