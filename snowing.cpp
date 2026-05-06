@@ -1,3 +1,7 @@
+//
+// Created by Laptop on 27/11/2025.
+//
+
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
@@ -41,65 +45,70 @@ bool update() {
   return true;
 }
 
-void init() {
+const unsigned char sprite[] = {
+
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+};
+
+
+void init()
+{
   for (int i = 0; i < WINDOW_WIDTH * WINDOW_HEIGHT; i++)
     gFrameBuffer[i] = 0xff000000;
 
-  for (int i = 0; i < WINDOW_WIDTH; i++) {
-    int p = (int)((sin((i + 3247) * 0.02) * 0.3 + sin((i + 2347) * 0.04) * 0.1 +
-                   sin((i + 4378) * 0.01) * 0.6) *
-                      100 +
-                  (WINDOW_HEIGHT * 2 / 3));
+  for (int i = 0; i < WINDOW_WIDTH; i++)
+  {
+    int p = (int)((sin((i + 3247) * 0.02) * 0.3 +
+            sin((i + 2347) * 0.04) * 0.1 +
+            sin((i + 4378) * 0.01) * 0.6) * 100 + (WINDOW_HEIGHT * 2 / 3));
     int pos = p * WINDOW_WIDTH + i;
-    for (int j = p; j < WINDOW_HEIGHT; j++) {
+    for (int j = p; j < WINDOW_HEIGHT; j++)
+    {
       gFrameBuffer[pos] = 0xff007f00;
       pos += WINDOW_WIDTH;
     }
   }
 }
 
-void newsnow() {
+void newsnow()
+{
   for (int i = 0; i < 8; i++)
     gFrameBuffer[rand() % (WINDOW_WIDTH - 2) + 1] = 0xffffffff;
 }
 
-
-void snowfall() {
-  for (int j = WINDOW_HEIGHT - 2; j >= 0; j--) {//dictates how low the snow can fall
+void snowfall()
+{
+  for (int j = WINDOW_HEIGHT - 2; j >= 0; j--)
+  {
     int ypos = j * WINDOW_WIDTH;
-    for (int i = 1; i < WINDOW_WIDTH - 1; i++) { //i value dictates x axis of where snow falls
-      if (gFrameBuffer[ypos + i] == 0xffffffff) {
-        if (gFrameBuffer[ypos + i + WINDOW_WIDTH] == 0xff000000) {
+    for (int i = 1; i < WINDOW_WIDTH - 1; i++)
+    {
+      if (gFrameBuffer[ypos + i] == 0xffffffff)
+      {
+        if (gFrameBuffer[ypos + i + WINDOW_WIDTH] == 0xff000000)
+        {
           gFrameBuffer[ypos + i + WINDOW_WIDTH] = 0xffffffff;
           gFrameBuffer[ypos + i] = 0xff000000;
-        }/* tl;dr anything relating to WINDOW WIDTH dictates where the snow falls '
-            0xffwhatever is ARGB colours (rgb, all that)*/
+        }
       }
     }
   }
 }
 
-void render() {
+void render()
+{
   newsnow();
   snowfall();
 }
 
-void loop() {
-  if (!update()) {
-    gDone = 1;
-#ifdef __EMSCRIPTEN__
-    emscripten_cancel_main_loop();
-#endif
-  } else {
-    render();
-  }
-}
+
 
 int main(int argc, char **argv) {
   if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS)) {
     return -1;
   }
-
   gFrameBuffer = new int[WINDOW_WIDTH * WINDOW_HEIGHT];
   gSDLWindow = SDL_CreateWindow("SDL3 window", WINDOW_WIDTH, WINDOW_HEIGHT, 0);
   gSDLRenderer = SDL_CreateRenderer(gSDLWindow, NULL);
@@ -110,15 +119,8 @@ int main(int argc, char **argv) {
   if (!gFrameBuffer || !gSDLWindow || !gSDLRenderer || !gSDLTexture)
     return -1;
   init();
-
   gDone = 0;
-#ifdef __EMSCRIPTEN__
-  emscripten_set_main_loop(loop, 0, 1);
-#else
-  while (!gDone) {
-    loop();
-  }
-#endif
+
 
   SDL_DestroyTexture(gSDLTexture);
   SDL_DestroyRenderer(gSDLRenderer);
