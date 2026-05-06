@@ -14,7 +14,10 @@ SDL_Texture *gSDLTexture;
 static int gDone;
 const int WINDOW_WIDTH = 1920 / 2;
 const int WINDOW_HEIGHT = 1080 / 2;
-
+/* COLOUR CODES NOTE
+    0xff = set first ff (alpha)
+    whatever is next = the actual hex code colour e.g 000000 is black
+*/
 bool update() {
   SDL_Event e;
   if (SDL_PollEvent(&e)) {
@@ -79,8 +82,9 @@ void init() {
                   (WINDOW_HEIGHT * 2 / 3));
     int pos = p * WINDOW_WIDTH + i;
     for (int j = p; j < WINDOW_HEIGHT; j++) {
-      gFrameBuffer[pos] = 0xff007f00;
+      gFrameBuffer[pos] = 0xffE200FF; //frame buffer at pos = colour
       pos += WINDOW_WIDTH;
+      /* pos is where the terrain is generated*/
     }
   }
 }
@@ -90,16 +94,31 @@ void newsnow() {
     gFrameBuffer[rand() % (WINDOW_WIDTH - 2) + 1] = 0xffffffff;
 }
 
+void cloud() {
+  int c = 500;
+  for (int i = WINDOW_HEIGHT - c; i > 0; i--) {
+    int ypos = i * WINDOW_HEIGHT;
+    if (gFrameBuffer[ypos + i] == 0xffffffff) {
+      if (gFrameBuffer[ypos + i + WINDOW_WIDTH] == 0xff000000) {
+        gFrameBuffer[ypos + i + WINDOW_WIDTH] = 0xffffffff;
+        gFrameBuffer[ypos + i] = 0xff000000;
+      }
+    }
+  }
+}
+
 void snowfall() {
-  for (int j = WINDOW_HEIGHT - 2; j >= 0; j--) {//dictates how low the snow can fall
+  for (int j = WINDOW_HEIGHT - 2; j >= 0;
+       j--) { // dictates how low the snow can fall
     int ypos = j * WINDOW_WIDTH;
-    for (int i = 1; i < WINDOW_WIDTH - 1; i++) { //i value dictates x axis of where snow falls
+    for (int i = 1; i < WINDOW_WIDTH - 1;
+         i++) { // i value dictates x axis of where snow falls
       if (gFrameBuffer[ypos + i] == 0xffffffff) {
         if (gFrameBuffer[ypos + i + WINDOW_WIDTH] == 0xff000000) {
           gFrameBuffer[ypos + i + WINDOW_WIDTH] = 0xffffffff;
           gFrameBuffer[ypos + i] = 0xff000000;
-        }/* tl;dr anything relating to WINDOW WIDTH dictates where the snow falls '
-            0xffwhatever is ARGB colours*/
+        } /* tl;dr anything relating to WINDOW WIDTH dictates where the snow
+             falls ' 0xffwhatever is ARGB colours*/
       }
     }
   }
@@ -108,6 +127,7 @@ void snowfall() {
 void render() {
   newsnow();
   snowfall();
+  
 }
 
 void loop() {
