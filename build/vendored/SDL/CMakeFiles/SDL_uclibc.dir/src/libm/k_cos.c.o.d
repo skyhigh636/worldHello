@@ -36,11 +36,11 @@ vendored/SDL/CMakeFiles/SDL_uclibc.dir/src/libm/k_cos.c.o: \
  /usr/include/bits/floatn-common.h /usr/include/stdlib.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
- /usr/include/memory.h /usr/include/string.h /usr/include/strings.h \
- /usr/include/wchar.h /usr/include/bits/wchar.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/inttypes.h \
+ /usr/include/alloca.h /usr/include/bits/types/once_flag.h \
+ /usr/include/bits/stdlib-float.h /usr/include/memory.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/wchar.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/math.h \

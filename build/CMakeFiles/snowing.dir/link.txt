@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/snowing.dir/link.d CMakeFiles/snowing.dir/snowing.cpp.o -o snowing  -Wl,-rpath,/home/emmy/worldHello/build libSDL3.so.0.3.3

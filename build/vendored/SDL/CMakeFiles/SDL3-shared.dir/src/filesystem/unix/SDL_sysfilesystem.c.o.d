@@ -27,7 +27,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/filesystem/unix/SDL_sysfilesystem.c.
  /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h \
+ /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
+ /usr/include/bits/openat2.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/libc-header-start.h \

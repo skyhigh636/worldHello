@@ -79,7 +79,9 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o: \
  /usr/include/glib-2.0/glib/ghostutils.h \
  /usr/include/glib-2.0/glib/giochannel.h \
  /usr/include/glib-2.0/glib/gmain.h /usr/include/glib-2.0/glib/gpoll.h \
- /usr/include/glib-2.0/glib/gslist.h /usr/include/glib-2.0/glib/gstring.h \
+ /usr/include/glib-2.0/glib/gslist.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+ /usr/include/glib-2.0/glib/gstring.h \
  /usr/include/glib-2.0/glib/gunicode.h \
  /usr/include/glib-2.0/glib/gstrfuncs.h \
  /usr/include/glib-2.0/glib/gkeyfile.h \
@@ -243,6 +245,9 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o: \
  /usr/include/glib-2.0/gio/giomodule.h /usr/include/glib-2.0/gmodule.h \
  /usr/include/glib-2.0/gmodule/gmodule-visibility.h \
  /usr/include/glib-2.0/gio/gioscheduler.h \
+ /usr/include/glib-2.0/gio/giptosmessage.h \
+ /usr/include/glib-2.0/gio/gsocketcontrolmessage.h \
+ /usr/include/glib-2.0/gio/gipv6tclassmessage.h \
  /usr/include/glib-2.0/gio/glistmodel.h \
  /usr/include/glib-2.0/gio/gliststore.h \
  /usr/include/glib-2.0/gio/gloadableicon.h \
@@ -289,7 +294,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ime.c.o: \
  /usr/include/glib-2.0/gio/gsocketclient.h \
  /usr/include/glib-2.0/gio/gsocketconnectable.h \
  /usr/include/glib-2.0/gio/gsocketconnection.h \
- /usr/include/glib-2.0/gio/gsocketcontrolmessage.h \
  /usr/include/glib-2.0/gio/gsocketlistener.h \
  /usr/include/glib-2.0/gio/gsocketservice.h \
  /usr/include/glib-2.0/gio/gsrvtarget.h \

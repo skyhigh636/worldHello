@@ -27,6 +27,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/power/linux/SDL_syspower.c.o: \
  /usr/include/bits/dirent_ext.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/linux/falloc.h \
+ /usr/include/linux/openat2.h /usr/include/bits/openat2.h \
  /home/emmy/worldHello/vendored/SDL/src/power/linux/../SDL_syspower.h \
  /home/emmy/worldHello/vendored/SDL/src/power/linux/../../core/linux/SDL_dbus.h \
  /usr/include/dbus-1.0/dbus/dbus.h \

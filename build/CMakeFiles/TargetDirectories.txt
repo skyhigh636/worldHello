@@ -1,4 +1,5 @@
 /home/emmy/worldHello/build/CMakeFiles/hello.dir
+/home/emmy/worldHello/build/CMakeFiles/snowing.dir
 /home/emmy/worldHello/build/CMakeFiles/edit_cache.dir
 /home/emmy/worldHello/build/CMakeFiles/rebuild_cache.dir
 /home/emmy/worldHello/build/vendored/SDL/CMakeFiles/SDL3-shared.dir

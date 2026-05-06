@@ -150,6 +150,7 @@
   CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o \
   CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o \
   CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o \
+  CMakeFiles/SDL3-shared.dir/src/audio/sndio/SDL_sndioaudio.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11clipboard.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11dyn.c.o \
   CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11events.c.o \
@@ -628,6 +629,8 @@ CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o:
 CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o:
+
+CMakeFiles/SDL3-shared.dir/src/audio/sndio/SDL_sndioaudio.c.o:
 
 CMakeFiles/SDL3-shared.dir/src/video/x11/SDL_x11clipboard.c.o:
 

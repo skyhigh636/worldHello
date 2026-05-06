@@ -11,6 +11,9 @@ add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
 add_executable(hello WIN32 game.cpp)
+add_executable(snowing WIN32 snowing.cpp)
 
 # Link to the actual SDL3 library.
 target_link_libraries(hello PRIVATE SDL3::SDL3)
+target_link_libraries(snowing PRIVATE SDL3::SDL3)
+

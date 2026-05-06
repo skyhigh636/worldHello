@@ -15,14 +15,20 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/alsa/SDL_alsa_audio.c.o: \
  /usr/include/stdlib.h /usr/include/sys/types.h /usr/include/string.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/bits/types/struct_timespec.h \
- /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
- /usr/include/assert.h /usr/include/poll.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h /usr/include/bits/types/__sigset_t.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
+ /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
+ /usr/include/linux/types.h /usr/include/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
+ /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
+ /usr/include/asm/posix_types.h /usr/include/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h /usr/include/bits/openat2.h \
+ /usr/include/bits/types/struct_timespec.h /usr/include/bits/stat.h \
+ /usr/include/bits/struct_stat.h /usr/include/assert.h \
+ /usr/include/poll.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
+ /usr/include/bits/types/__sigset_t.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
@@ -50,12 +56,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/audio/alsa/SDL_alsa_audio.c.o: \
  /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
  /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h /usr/include/linux/sockios.h \
- /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
- /usr/include/linux/types.h /usr/include/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
- /usr/include/asm/posix_types.h /usr/include/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h

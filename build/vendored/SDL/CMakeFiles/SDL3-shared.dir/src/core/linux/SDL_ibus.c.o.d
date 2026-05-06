@@ -78,7 +78,9 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o: \
  /usr/include/glib-2.0/glib/ghostutils.h \
  /usr/include/glib-2.0/glib/giochannel.h \
  /usr/include/glib-2.0/glib/gmain.h /usr/include/glib-2.0/glib/gpoll.h \
- /usr/include/glib-2.0/glib/gslist.h /usr/include/glib-2.0/glib/gstring.h \
+ /usr/include/glib-2.0/glib/gslist.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+ /usr/include/glib-2.0/glib/gstring.h \
  /usr/include/glib-2.0/glib/gunicode.h \
  /usr/include/glib-2.0/glib/gstrfuncs.h \
  /usr/include/glib-2.0/glib/gkeyfile.h \
@@ -242,6 +244,9 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o: \
  /usr/include/glib-2.0/gio/giomodule.h /usr/include/glib-2.0/gmodule.h \
  /usr/include/glib-2.0/gmodule/gmodule-visibility.h \
  /usr/include/glib-2.0/gio/gioscheduler.h \
+ /usr/include/glib-2.0/gio/giptosmessage.h \
+ /usr/include/glib-2.0/gio/gsocketcontrolmessage.h \
+ /usr/include/glib-2.0/gio/gipv6tclassmessage.h \
  /usr/include/glib-2.0/gio/glistmodel.h \
  /usr/include/glib-2.0/gio/gliststore.h \
  /usr/include/glib-2.0/gio/gloadableicon.h \
@@ -288,7 +293,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o: \
  /usr/include/glib-2.0/gio/gsocketclient.h \
  /usr/include/glib-2.0/gio/gsocketconnectable.h \
  /usr/include/glib-2.0/gio/gsocketconnection.h \
- /usr/include/glib-2.0/gio/gsocketcontrolmessage.h \
  /usr/include/glib-2.0/gio/gsocketlistener.h \
  /usr/include/glib-2.0/gio/gsocketservice.h \
  /usr/include/glib-2.0/gio/gsrvtarget.h \
@@ -388,16 +392,14 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o: \
  /usr/include/X11/keysymdef.h /usr/include/X11/Xatom.h \
  /usr/include/X11/Xresource.h /usr/include/X11/XKBlib.h \
  /usr/include/X11/extensions/XKBstr.h /usr/include/X11/extensions/XKB.h \
- /usr/include/X11/Xlibint.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
- /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
- /usr/include/X11/Xprotostr.h /usr/include/X11/XlibConf.h \
- /usr/include/X11/Xthreads.h /usr/include/X11/Xfuncs.h \
- /usr/include/X11/extensions/Xext.h /usr/include/sys/ipc.h \
- /usr/include/bits/ipctypes.h /usr/include/bits/ipc.h \
- /usr/include/bits/ipc-perm.h /usr/include/sys/shm.h \
- /usr/include/bits/shm.h /usr/include/bits/shmlba.h \
- /usr/include/bits/types/struct_shmid_ds.h \
+ /usr/include/X11/Xlibint.h /usr/include/X11/Xproto.h \
+ /usr/include/X11/Xmd.h /usr/include/X11/Xprotostr.h \
+ /usr/include/X11/XlibConf.h /usr/include/X11/Xthreads.h \
+ /usr/include/X11/Xfuncs.h /usr/include/X11/extensions/Xext.h \
+ /usr/include/sys/ipc.h /usr/include/bits/ipctypes.h \
+ /usr/include/bits/ipc.h /usr/include/bits/ipc-perm.h \
+ /usr/include/sys/shm.h /usr/include/bits/shm.h \
+ /usr/include/bits/shmlba.h /usr/include/bits/types/struct_shmid_ds.h \
  /usr/include/bits/types/struct_shmid64_ds.h \
  /usr/include/X11/extensions/XShm.h /usr/include/X11/extensions/shm.h \
  /usr/include/X11/Xcursor/Xcursor.h /usr/include/stdio.h \
@@ -437,5 +439,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/core/linux/SDL_ibus.c.o: \
  /usr/include/sys/inotify.h /usr/include/bits/inotify.h \
  /usr/include/fcntl.h /usr/include/bits/fcntl.h \
  /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/bits/stat.h \
+ /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
+ /usr/include/bits/openat2.h /usr/include/bits/stat.h \
  /usr/include/bits/struct_stat.h

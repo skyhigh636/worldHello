@@ -59,6 +59,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL3-shared.dir/src/audio/pipewire/SDL_pipewire.c.o.d"
   "CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o"
   "CMakeFiles/SDL3-shared.dir/src/audio/pulseaudio/SDL_pulseaudio.c.o.d"
+  "CMakeFiles/SDL3-shared.dir/src/audio/sndio/SDL_sndioaudio.c.o"
+  "CMakeFiles/SDL3-shared.dir/src/audio/sndio/SDL_sndioaudio.c.o.d"
   "CMakeFiles/SDL3-shared.dir/src/camera/SDL_camera.c.o"
   "CMakeFiles/SDL3-shared.dir/src/camera/SDL_camera.c.o.d"
   "CMakeFiles/SDL3-shared.dir/src/camera/dummy/SDL_camera_dummy.c.o"

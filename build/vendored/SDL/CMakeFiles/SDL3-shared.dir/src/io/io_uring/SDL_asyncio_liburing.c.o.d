@@ -54,17 +54,18 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/io/io_uring/SDL_asyncio_liburing.c.o
  /usr/include/bits/types/struct_itimerspec.h \
  /usr/include/bits/types/locale_t.h /usr/include/fcntl.h \
  /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /usr/include/sched.h \
+ /usr/include/linux/falloc.h /usr/include/linux/openat2.h \
+ /usr/include/bits/openat2.h /usr/include/sched.h \
  /usr/include/bits/sched.h /usr/include/linux/sched/types.h \
  /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
  /usr/include/linux/swab.h /usr/include/asm/swab.h \
  /usr/include/sys/wait.h /usr/include/bits/types/idtype_t.h \
  /usr/include/liburing/compat.h /usr/include/linux/time_types.h \
- /usr/include/linux/openat2.h /usr/include/linux/blkdev.h \
- /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h /usr/include/liburing/io_uring.h \
- /usr/include/linux/fs.h /usr/include/linux/limits.h \
- /usr/include/linux/fscrypt.h /usr/include/linux/mount.h \
+ /usr/include/linux/blkdev.h /usr/include/linux/ioctl.h \
+ /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
+ /usr/include/liburing/io_uring.h /usr/include/linux/fs.h \
+ /usr/include/linux/limits.h /usr/include/linux/fscrypt.h \
+ /usr/include/linux/mount.h /usr/include/liburing/io_uring/query.h \
  /usr/include/liburing/io_uring_version.h /usr/include/liburing/barrier.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdatomic.h \
  /usr/include/string.h

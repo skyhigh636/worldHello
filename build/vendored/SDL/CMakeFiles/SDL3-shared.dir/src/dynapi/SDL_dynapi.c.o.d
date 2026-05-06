@@ -35,7 +35,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/dynapi/SDL_dynapi.c.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h \
+ /usr/include/bits/types/once_flag.h /usr/include/bits/stdlib-float.h \
  /home/emmy/worldHello/vendored/SDL/include/SDL3/SDL.h \
  /home/emmy/worldHello/vendored/SDL/include/SDL3/SDL_stdinc.h \
  /usr/include/string.h /usr/include/bits/types/locale_t.h \

@@ -58,11 +58,13 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/bits/types/locale_t.h \
- /usr/include/spa-0.2/spa/pod/builder.h \
+ /usr/include/sys/types.h /usr/include/spa-0.2/spa/pod/builder.h \
  /usr/include/spa-0.2/spa/utils/hook.h \
  /usr/include/spa-0.2/spa/utils/list.h \
- /usr/include/spa-0.2/spa/pod/iter.h /usr/include/sys/types.h \
- /usr/include/spa-0.2/spa/pod/pod.h /usr/include/spa-0.2/spa/pod/vararg.h \
+ /usr/include/spa-0.2/spa/pod/body.h /usr/include/spa-0.2/spa/pod/pod.h \
+ /usr/include/spa-0.2/spa/utils/atomic.h \
+ /usr/include/spa-0.2/spa/pod/vararg.h \
+ /usr/include/spa-0.2/spa/pod/iter.h \
  /usr/include/spa-0.2/spa/param/video/raw.h \
  /usr/include/spa-0.2/spa/param/format.h \
  /usr/include/spa-0.2/spa/param/param.h \
@@ -138,5 +140,6 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/camera/pipewire/SDL_camera_pipewire.
  /usr/include/pipewire-0.3/pipewire/thread-loop.h \
  /usr/include/pipewire-0.3/pipewire/data-loop.h \
  /usr/include/spa-0.2/spa/support/thread.h \
+ /usr/include/pipewire-0.3/pipewire/timer-queue.h \
  /usr/include/pipewire-0.3/pipewire/version.h \
  /usr/include/pipewire-0.3/pipewire/extensions/metadata.h
